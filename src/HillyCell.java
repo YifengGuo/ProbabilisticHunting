@@ -28,4 +28,15 @@ public class HillyCell extends Cell {
     public boolean hasTarget() {
         return this.hasTarget;
     }
+
+    @Override
+    public String toString() {
+        return "H";
+    }
+
+    // constructor
+    public HillyCell(double initialBeleif) {
+        this.belief = initialBeleif;
+        hasTarget = false;
+    }
 }

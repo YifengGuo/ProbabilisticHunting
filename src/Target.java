@@ -21,6 +21,11 @@ public class Target {
         this.y = y;
     }
 
+    Target(int x , int y) {
+        this.x = x;
+        this.y = y;
+    }
+
     // maybe need to define some functions or fields to represent
     // target's likelihood in each cell of map
 }

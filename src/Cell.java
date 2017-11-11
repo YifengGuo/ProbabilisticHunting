@@ -5,6 +5,7 @@ public abstract class Cell {
     private boolean hasTarget;
     private double belief;
 
+    public abstract String toString();
     public abstract double getBelief();
 
     public abstract void setBelief(double belief);

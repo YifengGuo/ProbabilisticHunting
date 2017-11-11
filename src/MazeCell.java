@@ -29,4 +29,15 @@ public class MazeCell extends Cell{
     public boolean hasTarget() {
         return this.hasTarget;
     }
+
+    @Override
+    public String toString() {
+        return "M";
+    }
+
+    // constructor
+    public MazeCell(double initialBeleif) {
+        this.belief = initialBeleif;
+        hasTarget = false;
+    }
 }

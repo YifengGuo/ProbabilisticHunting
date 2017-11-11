@@ -28,4 +28,15 @@ public class ForrestCell extends Cell {
     public boolean hasTarget() {
         return this.hasTarget;
     }
+
+    @Override
+    public String toString() {
+        return "T";
+    }
+
+    // constructor
+    public ForrestCell(double initialBeleif) {
+        this.belief = initialBeleif;
+        hasTarget = false;
+    }
 }

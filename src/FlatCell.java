@@ -30,7 +30,14 @@ public class FlatCell extends Cell {
         return this.hasTarget;
     }
 
-    public FlatCell() {
+    @Override
+    public String toString() {
+        return "F";
+    }
+
+    // constructor
+    public FlatCell(double initialBeleif) {
+        this.belief = initialBeleif;
         hasTarget = false;
     }
 }
