@@ -4,6 +4,7 @@
 public class HillyCell extends Cell {
     private boolean hasTarget;
     private double belief;
+    public boolean failed;
 
     @Override
     public void setBelief(double belief) {
@@ -38,5 +39,6 @@ public class HillyCell extends Cell {
     public HillyCell(double initialBeleif) {
         this.belief = initialBeleif;
         hasTarget = false;
+        this.failed = false;
     }
 }

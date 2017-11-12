@@ -4,6 +4,7 @@
 public class MazeCell extends Cell{
     private boolean hasTarget;
     private double belief;
+    public boolean failed;
 
     @Override
     public void setBelief(double belief) {
@@ -39,5 +40,6 @@ public class MazeCell extends Cell{
     public MazeCell(double initialBeleif) {
         this.belief = initialBeleif;
         hasTarget = false;
+        this.failed = false;
     }
 }
